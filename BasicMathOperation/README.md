@@ -14,8 +14,8 @@
      http://localhost:8080/swagger-ui/index.html#/
 
 ## Docker Build Command:
-    cd MathOperation
-    docker build -t mathoperation:1.0.0 .
+    cd BasicMathOperation
+    docker build -t basicMathOperation:1.0.0 .
 
 ## Docker Run Command
-    docker run --name mathoperation  --env documentDBClusterIp=host.docker.internal:27017 --env dbConnectionString="mongodb://%s/?ssl=false&retryWrites=false" -p 8080:8080  mathoperation:1.0.0
+    docker run --name basicMathOperation  --env documentDBClusterIp=host.docker.internal:27017 --env dbConnectionString="mongodb://%s/?ssl=false&retryWrites=false" -p 8080:8080  basicMathOperation:1.0.0
